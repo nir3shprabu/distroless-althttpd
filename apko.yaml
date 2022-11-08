@@ -1,10 +1,17 @@
 contents:
   repositories:
     - https://dl-cdn.alpinelinux.org/alpine/edge/main
+    # - https://dl-cdn.alpinelinux.org/alpine/edge/Repository
+    - https://dl-cdn.alpinelinux.org/alpine/edge/community
   packages:
     - alpine-baselayout-data
     - ca-certificates-bundle
     - tzdata
+    - althttpd
+  archs:
+  - all
+  entrypoint:
+  command: althttpd --popup
 
 accounts:
   groups:
