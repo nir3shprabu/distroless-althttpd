@@ -12,6 +12,8 @@ contents:
   - all
   entrypoint:
   command: althttpd --popup
+  environment:
+       PATH: /bin:/usr/bin
 
 accounts:
   groups:
