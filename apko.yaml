@@ -9,11 +9,11 @@ contents:
     - tzdata
     - althttpd
   archs:
-  - all
+  - x86_64
   entrypoint:
   command: althttpd --popup
   environment:
-       PATH: /bin:/usr/bin
+    PATH: /usr/sbin:/sbin:/usr/bin:/bin
 
 accounts:
   groups:
