@@ -11,9 +11,10 @@ contents:
   archs:
   - x86_64
   entrypoint:
-  command: althttpd --popup
+    command: althttpd --popup
   environment:
     PATH: /usr/sbin:/sbin:/usr/bin:/bin
+  
 
 accounts:
   groups:
