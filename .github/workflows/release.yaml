@@ -54,7 +54,7 @@ jobs:
       run: |
         IMAGE_NAME=$(docker load < output.tar | grep "Loaded image" | sed 's/^Loaded image: //')
         IMAGE_NAME=$IMAGE_NAME ./test.sh
-        
+
     # Post to slack when things fail.
     # - if: ${{ failure() }}
     #   uses: rtCamp/action-slack-notify@v2.2.0
@@ -80,16 +80,16 @@ jobs:
       packages: write
       contents: read
 
-    strategy:
-      matrix:
-        ref: ${{ fromJson(needs.build.outputs.image-refs) }}
-        althttpd-version: [2.0]
-        include:
-          - althttpd-version: 2.0
-            sha256: 93310d77f7c608dc0f284e57a60e40b64803fbf17c0c1ff881fb856ae5773e59
-    steps:
-    - run: |
-        echo ${{ matrix.ref }}
+    # strategy:
+    #   matrix:
+    #     ref: ${{ fromJson(needs.build.outputs.image-refs) }}
+    #     althttpd-version: [2.0]
+    #     include:
+    #       - althttpd-version: 2.0
+    #         sha256: 93310d77f7c608dc0f284e57a60e40b64803fbf17c0c1ff881fb856ae5773e59
+    # steps:
+    # - run: |
+    #     echo ${{ matrix.ref }}
 
     - uses: chainguard-images/actions/vul-scans@main
       id: scans
