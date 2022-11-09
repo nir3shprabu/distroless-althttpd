@@ -1,0 +1,315 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "sbom-sha256:91a79c073fb45ecd818f87add2a91bf49e42853a1f13b72ee44c6ac58a7063b1",
+  "spdxVersion": "SPDX-2.3",
+  "creationInfo": {
+    "created": "1970-01-01T00:00:00Z",
+    "creators": [
+      "Tool: apko (d9f4575)",
+      "Organization: Chainguard, Inc"
+    ],
+    "licenseListVersion": "3.16"
+  },
+  "dataLicense": "CC0-1.0",
+  "documentNamespace": "https://spdx.org/spdxdocs/apko/",
+  "documentDescribes": [
+    "SPDXRef-Package-sha256-91a79c073fb45ecd818f87add2a91bf49e42853a1f13b72ee44c6ac58a7063b1"
+  ],
+  "packages": [
+    {
+      "SPDXID": "https-C47C47github.comC47nir3shprabuC47distroless-althttpd.gitC6436995170416af3f4a39039d491e9daeb527cc651",
+      "name": "github.com/nir3shprabu/distroless-althttpd.git",
+      "versionInfo": "36995170416af3f4a39039d491e9daeb527cc651",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "description": "Image configuration source",
+      "downloadLocation": "https://github.com/nir3shprabu/distroless-althttpd.git@36995170416af3f4a39039d491e9daeb527cc651",
+      "copyrightText": "",
+      "primaryPackagePurpose": "SOURCE",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "36995170416af3f4a39039d491e9daeb527cc651"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/nir3shprabu/distroless-althttpd@36995170416af3f4a39039d491e9daeb527cc651",
+          "referenceType": "purl"
+        }
+      ],
+      "packageVerificationCode": {
+        "packageVerificationCodeValue": ""
+      }
+    },
+    {
+      "SPDXID": "SPDXRef-Package-sha256-91a79c073fb45ecd818f87add2a91bf49e42853a1f13b72ee44c6ac58a7063b1",
+      "name": "sha256:91a79c073fb45ecd818f87add2a91bf49e42853a1f13b72ee44c6ac58a7063b1",
+      "versionInfo": "Unknown",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "description": "apko operating system layer",
+      "downloadLocation": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "checksums": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:oci/apko-alpine@sha256:91a79c073fb45ecd818f87add2a91bf49e42853a1f13b72ee44c6ac58a7063b1?arch=amd64\u0026mediaType=application%2Fvnd.oci.image.layer.v1.tar%2Bgzip\u0026os=linux",
+          "referenceType": "purl"
+        }
+      ],
+      "packageVerificationCode": {
+        "packageVerificationCodeValue": ""
+      }
+    },
+    {
+      "SPDXID": "SPDXRef-Package-SPDXRef-Package-sha256-91a79c073fb45ecd818f87add2a91bf49e42853a1f13b72ee44c6ac58a7063b1-alpine-baselayout-data-3.4.0-r0",
+      "name": "alpine-baselayout-data",
+      "versionInfo": "3.4.0-r0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "GPL-2.0-only",
+      "licenseDeclared": "NOASSERTION",
+      "description": "Alpine base dir structure and init scripts",
+      "downloadLocation": "https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout",
+      "originator": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+      "sourceInfo": "Package info from apk database",
+      "copyrightText": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "e5f7e3293dbc941ee24978f3a48fde0dd6110b03"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/alpine/alpine-baselayout-data@3.4.0-r0?arch=x86_64",
+          "referenceType": "purl"
+        }
+      ],
+      "packageVerificationCode": {
+        "packageVerificationCodeValue": ""
+      }
+    },
+    {
+      "SPDXID": "SPDXRef-Package-SPDXRef-Package-sha256-91a79c073fb45ecd818f87add2a91bf49e42853a1f13b72ee44c6ac58a7063b1-musl-1.2.3-r2",
+      "name": "musl",
+      "versionInfo": "1.2.3-r2",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "NOASSERTION",
+      "description": "the musl c library (libc) implementation",
+      "downloadLocation": "https://musl.libc.org/",
+      "originator": "Timo Teräs \u003ctimo.teras@iki.fi\u003e",
+      "sourceInfo": "Package info from apk database",
+      "copyrightText": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "c30104054cd8520de72d56b2c7d622c403ebbbb1"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/alpine/musl@1.2.3-r2?arch=x86_64",
+          "referenceType": "purl"
+        }
+      ],
+      "packageVerificationCode": {
+        "packageVerificationCodeValue": ""
+      }
+    },
+    {
+      "SPDXID": "SPDXRef-Package-SPDXRef-Package-sha256-91a79c073fb45ecd818f87add2a91bf49e42853a1f13b72ee44c6ac58a7063b1-libcrypto3-3.0.7-r0",
+      "name": "libcrypto3",
+      "versionInfo": "3.0.7-r0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "Apache-2.0",
+      "licenseDeclared": "NOASSERTION",
+      "description": "Crypto library from openssl",
+      "downloadLocation": "https://www.openssl.org/",
+      "originator": "Ariadne Conill \u003cariadne@dereferenced.org\u003e",
+      "sourceInfo": "Package info from apk database",
+      "copyrightText": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "bf2df01030f608b5a707a3a761b488b5aad674a6"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/alpine/libcrypto3@3.0.7-r0?arch=x86_64",
+          "referenceType": "purl"
+        }
+      ],
+      "packageVerificationCode": {
+        "packageVerificationCodeValue": ""
+      }
+    },
+    {
+      "SPDXID": "SPDXRef-Package-SPDXRef-Package-sha256-91a79c073fb45ecd818f87add2a91bf49e42853a1f13b72ee44c6ac58a7063b1-libssl3-3.0.7-r0",
+      "name": "libssl3",
+      "versionInfo": "3.0.7-r0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "Apache-2.0",
+      "licenseDeclared": "NOASSERTION",
+      "description": "SSL shared libraries",
+      "downloadLocation": "https://www.openssl.org/",
+      "originator": "Ariadne Conill \u003cariadne@dereferenced.org\u003e",
+      "sourceInfo": "Package info from apk database",
+      "copyrightText": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "f4baa84191a57c118ff597010b8689232a421f42"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/alpine/libssl3@3.0.7-r0?arch=x86_64",
+          "referenceType": "purl"
+        }
+      ],
+      "packageVerificationCode": {
+        "packageVerificationCodeValue": ""
+      }
+    },
+    {
+      "SPDXID": "SPDXRef-Package-SPDXRef-Package-sha256-91a79c073fb45ecd818f87add2a91bf49e42853a1f13b72ee44c6ac58a7063b1-althttpd-202209261657-r0",
+      "name": "althttpd",
+      "versionInfo": "202209261657-r0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "Public-Domain",
+      "licenseDeclared": "NOASSERTION",
+      "description": "Small, simple, stand-alone HTTP server",
+      "downloadLocation": "https://sqlite.org/althttpd/doc/trunk/althttpd.md",
+      "originator": "Sodface \u003csod@sodface.com\u003e",
+      "sourceInfo": "Package info from apk database",
+      "copyrightText": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "da4e3e26bf455b2e1f48897cc3d9c7b221972f0e"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/alpine/althttpd@202209261657-r0?arch=x86_64",
+          "referenceType": "purl"
+        }
+      ],
+      "packageVerificationCode": {
+        "packageVerificationCodeValue": ""
+      }
+    },
+    {
+      "SPDXID": "SPDXRef-Package-SPDXRef-Package-sha256-91a79c073fb45ecd818f87add2a91bf49e42853a1f13b72ee44c6ac58a7063b1-ca-certificates-bundle-20220614-r2",
+      "name": "ca-certificates-bundle",
+      "versionInfo": "20220614-r2",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MPL-2.0 AND MIT",
+      "licenseDeclared": "NOASSERTION",
+      "description": "Pre generated bundle of Mozilla certificates",
+      "downloadLocation": "https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/",
+      "originator": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+      "sourceInfo": "Package info from apk database",
+      "copyrightText": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "376623a361618eb34df0a901377bb99074721dc0"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/alpine/ca-certificates-bundle@20220614-r2?arch=x86_64",
+          "referenceType": "purl"
+        }
+      ],
+      "packageVerificationCode": {
+        "packageVerificationCodeValue": ""
+      }
+    },
+    {
+      "SPDXID": "SPDXRef-Package-SPDXRef-Package-sha256-91a79c073fb45ecd818f87add2a91bf49e42853a1f13b72ee44c6ac58a7063b1-tzdata-2022f-r1",
+      "name": "tzdata",
+      "versionInfo": "2022f-r1",
+      "filesAnalyzed": false,
+      "licenseConcluded": "Public-Domain",
+      "licenseDeclared": "NOASSERTION",
+      "description": "Timezone data",
+      "downloadLocation": "https://www.iana.org/time-zones",
+      "originator": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+      "sourceInfo": "Package info from apk database",
+      "copyrightText": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "7752b6fc9e327fcddcd2055382debad1362804fd"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/alpine/tzdata@2022f-r1?arch=x86_64",
+          "referenceType": "purl"
+        }
+      ],
+      "packageVerificationCode": {
+        "packageVerificationCodeValue": ""
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-Package-sha256-91a79c073fb45ecd818f87add2a91bf49e42853a1f13b72ee44c6ac58a7063b1",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "https-C47C47github.comC47nir3shprabuC47distroless-althttpd.gitC6436995170416af3f4a39039d491e9daeb527cc651"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-sha256-91a79c073fb45ecd818f87add2a91bf49e42853a1f13b72ee44c6ac58a7063b1",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-SPDXRef-Package-sha256-91a79c073fb45ecd818f87add2a91bf49e42853a1f13b72ee44c6ac58a7063b1-alpine-baselayout-data-3.4.0-r0"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-sha256-91a79c073fb45ecd818f87add2a91bf49e42853a1f13b72ee44c6ac58a7063b1",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-SPDXRef-Package-sha256-91a79c073fb45ecd818f87add2a91bf49e42853a1f13b72ee44c6ac58a7063b1-musl-1.2.3-r2"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-sha256-91a79c073fb45ecd818f87add2a91bf49e42853a1f13b72ee44c6ac58a7063b1",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-SPDXRef-Package-sha256-91a79c073fb45ecd818f87add2a91bf49e42853a1f13b72ee44c6ac58a7063b1-libcrypto3-3.0.7-r0"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-sha256-91a79c073fb45ecd818f87add2a91bf49e42853a1f13b72ee44c6ac58a7063b1",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-SPDXRef-Package-sha256-91a79c073fb45ecd818f87add2a91bf49e42853a1f13b72ee44c6ac58a7063b1-libssl3-3.0.7-r0"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-sha256-91a79c073fb45ecd818f87add2a91bf49e42853a1f13b72ee44c6ac58a7063b1",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-SPDXRef-Package-sha256-91a79c073fb45ecd818f87add2a91bf49e42853a1f13b72ee44c6ac58a7063b1-althttpd-202209261657-r0"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-sha256-91a79c073fb45ecd818f87add2a91bf49e42853a1f13b72ee44c6ac58a7063b1",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-SPDXRef-Package-sha256-91a79c073fb45ecd818f87add2a91bf49e42853a1f13b72ee44c6ac58a7063b1-ca-certificates-bundle-20220614-r2"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-sha256-91a79c073fb45ecd818f87add2a91bf49e42853a1f13b72ee44c6ac58a7063b1",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-SPDXRef-Package-sha256-91a79c073fb45ecd818f87add2a91bf49e42853a1f13b72ee44c6ac58a7063b1-tzdata-2022f-r1"
+    }
+  ]
+}
