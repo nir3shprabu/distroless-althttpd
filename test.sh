@@ -2,18 +2,10 @@
 
 set -o errexit -o nounset -o errtrace -o pipefail
 
-IMAGE_NAME=${IMAGE_NAME:-"nir3shprabu/distroless-althttpd"}
-CLONE_URL=${CLONE_URL:-"https://github.com/nir3shprabu/distroless-althttpd.git"}
+IMAGE_NAME=${IMAGE_NAME:-"ghcr.io/nir3shprabu"}
+CONTAINER_NAME=${CONTAINER_NAME:-"althttpd-smoketest-$(date +%s)"}
 
-CLONEDIR="$(mktemp -d)"
-chmod go+wrx "${CLONEDIR}"
+docker run -p 8080:80 -d --name $CONTAINER_NAME $IMAGE_NAME
+trap "docker rm -f $CONTAINER_NAME" EXIT
 
-# TODO: re-enable this delete. After performing the clone
-# in some cases, this results in a "permission denied" error
-# trap "rm -rf ${CLONEDIR}" EXIT
-
-# Try cloning a repo and check for README.md
-pushd "${CLONEDIR}"
-docker run --rm -v "${PWD}":/w -w /w $IMAGE_NAME clone --depth 1 $CLONE_URL .
-popd
-find "${CLONEDIR}/README.md" && echo "Smoketest passed."
+curl -v --max-time 10 http://localhost:8080/ 
