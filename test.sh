@@ -6,7 +6,7 @@ IMAGE_NAME=${IMAGE_NAME:-"nir3shprabu/distroless-althttpd"}
 CLONE_URL=${CLONE_URL:-"https://github.com/nir3shprabu/distroless-althttpd.git"}
 
 CLONEDIR="$(mktemp -d)"
-sudo chmod go+wrx "${CLONEDIR}"
+chmod go+wrx "${CLONEDIR}"
 
 # TODO: re-enable this delete. After performing the clone
 # in some cases, this results in a "permission denied" error
