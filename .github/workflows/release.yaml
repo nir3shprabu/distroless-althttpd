@@ -49,7 +49,12 @@ jobs:
       run: |
         cat apko.images | sed 's/$/\n/g' | grep -v '^$' | jq -R -s -c 'split("\n")[:-1]' | jq .
         echo "image-refs=$(cat apko.images | sed 's/$/\n/g' | grep -v '^$' | jq -R -s -c 'split("\n")[:-1]')" >> $GITHUB_OUTPUT
-
+    
+    - name: Smoke Test
+      run: |
+        IMAGE_NAME=$(docker load < output.tar | grep "Loaded image" | sed 's/^Loaded image: //')
+        IMAGE_NAME=$IMAGE_NAME ./test.sh
+        
     # Post to slack when things fail.
     # - if: ${{ failure() }}
     #   uses: rtCamp/action-slack-notify@v2.2.0
@@ -97,10 +102,7 @@ jobs:
         RUN_GRYPE: "false"
         DOCKER_LOGIN: 'true'
 
-    - name: Smoke Test
-      run: |
-        IMAGE_NAME=$(docker load < output.tar | grep "Loaded image" | sed 's/^Loaded image: //')
-        IMAGE_NAME=$IMAGE_NAME ./test.sh
+    
 
     - name: Image Vulnerability scan output
       shell: bash
