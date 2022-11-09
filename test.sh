@@ -2,7 +2,7 @@
 
 set -o errexit -o nounset -o errtrace -o pipefail
 
-IMAGE_NAME=${IMAGE_NAME:-"ghcr.io/nir3shprabu/distroless-althttpd"}
+IMAGE_NAME=${IMAGE_NAME:-"nir3shprabu/distroless-althttpd"}
 CLONE_URL=${CLONE_URL:-"https://github.com/nir3shprabu/distroless-althttpd.git"}
 
 CLONEDIR="$(mktemp -d)"
